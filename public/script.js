@@ -46,7 +46,7 @@ const information = {
   },
   clinics: {
     title: 'Aprender el juego. Disfrutar el fútbol.',
-    paragraphs: ['5 días de entrenamiento deportivo con el staff y entrenadores de Iniesta Academy Global. Una experiencia basada en los conceptos futbolísticos de Andrés Iniesta.', 'Los grupos se organizan por edad y nivel. La clínica será del 20 al 24 de marzo de 2027. El horario está pendiente de confirmación.'],
+    paragraphs: ['5 días de entrenamiento deportivo con el staff y entrenadores de Iniesta Academy Global. Una experiencia basada en los conceptos futbolísticos de Andrés Iniesta.', 'Para participantes de 5 a 18 años; los grupos se organizan por edad y nivel. La clínica será del 20 al 24 de marzo de 2027. El horario está pendiente de confirmación.'],
   },
   contacto: {
     title: 'Hablemos de fútbol',

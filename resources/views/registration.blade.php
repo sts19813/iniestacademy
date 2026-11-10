@@ -58,7 +58,7 @@
             </div></fieldset>
             <label class="registration-consent"><input type="checkbox" name="privacy_consent" value="1" @checked(old('privacy_consent')) required /><span>He leído el aviso de privacidad y autorizo que me contacten sobre esta solicitud. *</span></label>
             <a class="registration-privacy-link" href="{{ route('privacy') }}">Consultar aviso de privacidad</a>
-<p class="registration-price">20 al 24 de marzo de 2027 · Centro Universitario Montejo, Mérida<br />@if (config('registration.promotion_amount'))<del>${{ number_format(config('registration.regular_amount') / 100, 2) }}</del> MXN · @endif Total por participante: <strong>${{ number_format((config('registration.promotion_amount') ?: config('registration.regular_amount')) / 100, 2) }} MXN</strong>.</p>
+<p class="registration-price">20 al 24 de marzo de 2027 · Centro Universitario Montejo, Mérida<br />Para participantes de 5 a 18 años<br />@if (config('registration.promotion_amount'))<del>${{ number_format(config('registration.regular_amount') / 100, 2) }}</del> MXN · @endif Total por participante: <strong>${{ number_format((config('registration.promotion_amount') ?: config('registration.regular_amount')) / 100, 2) }} MXN</strong>.</p>
             <button class="button button-turquoise registration-submit" type="submit"><span>Continuar y pagar</span><img src="{{ asset('assets/imgIaIconArrowUpRight1.svg') }}" alt="" width="24" height="24" /></button>
           </form>
         </div>

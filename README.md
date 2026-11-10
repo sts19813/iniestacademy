@@ -30,7 +30,7 @@ node --check public/script.js # opcional
 
 La integración de inscripción y Stripe se activa por configuración. Mientras está desactivada, la landing no recoge registros ni cobra. Se mantienen `SEGURIDAD.md`, `PLAN_DESARROLLO.md` y `config/security-baseline.json` como documentación de las fases futuras.
 
-La clínica está programada del 20 al 24 de marzo de 2027. La sede es Centro Universitario Montejo, Mérida, Yucatán. El horario y las edades están pendientes de confirmación. Los datos de contacto y perfiles sociales aún están pendientes; el aviso de privacidad publicado es una versión básica en elaboración. El pago se procesa con Stripe. Las capturas en `qa/` corresponden a la versión estática anterior a la migración.
+La clínica está programada del 20 al 24 de marzo de 2027. La sede es Centro Universitario Montejo, Mérida, Yucatán. El rango de edad confirmado es de 5 a 18 años; el horario está pendiente de confirmación. Los datos de contacto y perfiles sociales aún están pendientes; el aviso de privacidad publicado es una versión básica en elaboración. El pago se procesa con Stripe. Las capturas en `qa/` corresponden a la versión estática anterior a la migración.
 
 ## Inscripciones con Stripe (preparación)
 
