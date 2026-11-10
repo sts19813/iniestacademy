@@ -1,0 +1,1100 @@
+[
+  {
+    "width": 1440,
+    "documentWidth": 1440,
+    "images": [
+      {
+        "source": "assets/imgLogoOficialSobreFondoOscuro1.svg",
+        "width": 160,
+        "height": 46,
+        "naturalWidth": 160
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/img02HeroElJuegoEmpiezaContigo.png",
+        "width": 1440,
+        "height": 879,
+        "naturalWidth": 2200
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgEntrenamientoOficialReferenciaRojoVino.png",
+        "width": 640,
+        "height": 786.40625,
+        "naturalWidth": 459
+      },
+      {
+        "source": "assets/imgFrame5.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame4.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame3.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame2.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame1.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgEntrenamientoOficialReferenciaRojoVino.png",
+        "width": 640,
+        "height": 786.40625,
+        "naturalWidth": 459
+      },
+      {
+        "source": "assets/imgEntrenamientoOficialReferenciaRojoVino1.png",
+        "width": 640,
+        "height": 432,
+        "naturalWidth": 2197
+      },
+      {
+        "source": "assets/imgFrame6.svg",
+        "width": 44.796875,
+        "height": 44.796875,
+        "naturalWidth": 45
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgFrame7.svg",
+        "width": 44.796875,
+        "height": 44.796875,
+        "naturalWidth": 45
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgRectangle1.png",
+        "width": 732.25,
+        "height": 425.171875,
+        "naturalWidth": 870
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgCreditCard.svg",
+        "width": 24,
+        "height": 24,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgLocalAtm.svg",
+        "width": 24,
+        "height": 24,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgLocalAtm.svg",
+        "width": 24,
+        "height": 24,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgLogoOficialSobreFondoOscuro.svg",
+        "width": 208,
+        "height": 60,
+        "naturalWidth": 208
+      }
+    ],
+    "sections": [
+      {
+        "id": "inicio",
+        "y": 0,
+        "height": 879
+      },
+      {
+        "id": "facts",
+        "y": 955,
+        "height": 166
+      },
+      {
+        "id": "academia",
+        "y": 1121,
+        "height": 592
+      },
+      {
+        "id": "metodologia",
+        "y": 1713,
+        "height": 651
+      },
+      {
+        "id": "experiencia",
+        "y": 2364,
+        "height": 812
+      },
+      {
+        "id": "programa",
+        "y": 3176,
+        "height": 650
+      },
+      {
+        "id": "sede",
+        "y": 3890,
+        "height": 721
+      },
+      {
+        "id": "preguntas",
+        "y": 4611,
+        "height": 614
+      }
+    ],
+    "overflowingText": [],
+    "header": [
+      {
+        "name": "brand",
+        "x": 80,
+        "y": 11.15625,
+        "width": 160
+      },
+      {
+        "name": "main-nav",
+        "x": 280,
+        "y": 13.15625,
+        "width": 886.953125
+      },
+      {
+        "name": "button button-paper header-cta",
+        "x": 1206.953125,
+        "y": 10,
+        "width": 153.046875
+      }
+    ],
+    "browserErrors": [],
+    "interactions": "passed",
+    "privateStorage": "empty"
+  },
+  {
+    "width": 1024,
+    "documentWidth": 1024,
+    "images": [
+      {
+        "source": "assets/imgLogoOficialSobreFondoOscuro1.svg",
+        "width": 160,
+        "height": 46,
+        "naturalWidth": 160
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/img02HeroElJuegoEmpiezaContigo.png",
+        "width": 1024,
+        "height": 790,
+        "naturalWidth": 2200
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgEntrenamientoOficialReferenciaRojoVino.png",
+        "width": 469.34375,
+        "height": 576.6875,
+        "naturalWidth": 459
+      },
+      {
+        "source": "assets/imgFrame5.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame4.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame3.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame2.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame1.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgEntrenamientoOficialReferenciaRojoVino.png",
+        "width": 469.34375,
+        "height": 576.6875,
+        "naturalWidth": 459
+      },
+      {
+        "source": "assets/imgEntrenamientoOficialReferenciaRojoVino1.png",
+        "width": 469.34375,
+        "height": 316.796875,
+        "naturalWidth": 2197
+      },
+      {
+        "source": "assets/imgFrame6.svg",
+        "width": 44.796875,
+        "height": 44.796875,
+        "naturalWidth": 45
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgFrame7.svg",
+        "width": 44.796875,
+        "height": 44.796875,
+        "naturalWidth": 45
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgRectangle1.png",
+        "width": 536.96875,
+        "height": 311.78125,
+        "naturalWidth": 870
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgCreditCard.svg",
+        "width": 24,
+        "height": 24,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgLocalAtm.svg",
+        "width": 24,
+        "height": 24,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgLocalAtm.svg",
+        "width": 24,
+        "height": 24,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgLogoOficialSobreFondoOscuro.svg",
+        "width": 208,
+        "height": 60,
+        "naturalWidth": 208
+      }
+    ],
+    "sections": [
+      {
+        "id": "inicio",
+        "y": 0,
+        "height": 790
+      },
+      {
+        "id": "facts",
+        "y": 866,
+        "height": 158
+      },
+      {
+        "id": "academia",
+        "y": 1024,
+        "height": 530
+      },
+      {
+        "id": "metodologia",
+        "y": 1554,
+        "height": 775
+      },
+      {
+        "id": "experiencia",
+        "y": 2329,
+        "height": 818
+      },
+      {
+        "id": "programa",
+        "y": 3147,
+        "height": 640
+      },
+      {
+        "id": "sede",
+        "y": 3851,
+        "height": 616
+      },
+      {
+        "id": "preguntas",
+        "y": 4467,
+        "height": 576
+      }
+    ],
+    "overflowingText": [],
+    "header": [
+      {
+        "name": "brand",
+        "x": 48,
+        "y": 11.15625,
+        "width": 160
+      },
+      {
+        "name": "main-nav",
+        "x": 236,
+        "y": 13.15625,
+        "width": 558.953125
+      },
+      {
+        "name": "button button-paper header-cta",
+        "x": 822.953125,
+        "y": 10,
+        "width": 153.046875
+      }
+    ],
+    "browserErrors": [],
+    "interactions": "passed",
+    "privateStorage": "empty"
+  },
+  {
+    "width": 768,
+    "documentWidth": 768,
+    "images": [
+      {
+        "source": "assets/imgLogoOficialSobreFondoOscuro1.svg",
+        "width": 160,
+        "height": 46,
+        "naturalWidth": 160
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/img02HeroElJuegoEmpiezaContigo.png",
+        "width": 768,
+        "height": 760,
+        "naturalWidth": 2200
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgEntrenamientoOficialReferenciaRojoVino.png",
+        "width": 336,
+        "height": 412.859375,
+        "naturalWidth": 459
+      },
+      {
+        "source": "assets/imgFrame5.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame4.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame3.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame2.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame1.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgEntrenamientoOficialReferenciaRojoVino.png",
+        "width": 336,
+        "height": 412.859375,
+        "naturalWidth": 459
+      },
+      {
+        "source": "assets/imgEntrenamientoOficialReferenciaRojoVino1.png",
+        "width": 336,
+        "height": 226.796875,
+        "naturalWidth": 2197
+      },
+      {
+        "source": "assets/imgFrame6.svg",
+        "width": 44.796875,
+        "height": 44.796875,
+        "naturalWidth": 45
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgFrame7.svg",
+        "width": 44.796875,
+        "height": 44.796875,
+        "naturalWidth": 45
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgRectangle1.png",
+        "width": 397.75,
+        "height": 230.921875,
+        "naturalWidth": 870
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgCreditCard.svg",
+        "width": 24,
+        "height": 24,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgLocalAtm.svg",
+        "width": 24,
+        "height": 24,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgLocalAtm.svg",
+        "width": 24,
+        "height": 24,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgLogoOficialSobreFondoOscuro.svg",
+        "width": 208,
+        "height": 60,
+        "naturalWidth": 208
+      }
+    ],
+    "sections": [
+      {
+        "id": "inicio",
+        "y": 0,
+        "height": 760
+      },
+      {
+        "id": "facts",
+        "y": 836,
+        "height": 270
+      },
+      {
+        "id": "academia",
+        "y": 1106,
+        "height": 560
+      },
+      {
+        "id": "metodologia",
+        "y": 1666,
+        "height": 813
+      },
+      {
+        "id": "experiencia",
+        "y": 2479,
+        "height": 840
+      },
+      {
+        "id": "programa",
+        "y": 3319,
+        "height": 655
+      },
+      {
+        "id": "sede",
+        "y": 4038,
+        "height": 676
+      },
+      {
+        "id": "preguntas",
+        "y": 4714,
+        "height": 622
+      }
+    ],
+    "overflowingText": [],
+    "header": [
+      {
+        "name": "brand",
+        "x": 32,
+        "y": 11.15625,
+        "width": 160
+      },
+      {
+        "name": "main-nav",
+        "x": 214,
+        "y": 13.15625,
+        "width": 360.484375
+      },
+      {
+        "name": "button button-paper header-cta",
+        "x": 596.484375,
+        "y": 10,
+        "width": 139.515625
+      }
+    ],
+    "browserErrors": [],
+    "interactions": "passed",
+    "privateStorage": "empty"
+  },
+  {
+    "width": 390,
+    "documentWidth": 390,
+    "images": [
+      {
+        "source": "assets/imgLogoOficialSobreFondoOscuro1.svg",
+        "width": 160,
+        "height": 46,
+        "naturalWidth": 160
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight.svg",
+        "width": 0,
+        "height": 0,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/img02HeroElJuegoEmpiezaContigo.png",
+        "width": 390,
+        "height": 760,
+        "naturalWidth": 2200
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgEntrenamientoOficialReferenciaRojoVino.png",
+        "width": 342,
+        "height": 420.21875,
+        "naturalWidth": 459
+      },
+      {
+        "source": "assets/imgFrame5.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame4.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame3.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame2.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame1.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgEntrenamientoOficialReferenciaRojoVino.png",
+        "width": 342,
+        "height": 420.21875,
+        "naturalWidth": 459
+      },
+      {
+        "source": "assets/imgEntrenamientoOficialReferenciaRojoVino1.png",
+        "width": 342,
+        "height": 230.84375,
+        "naturalWidth": 2197
+      },
+      {
+        "source": "assets/imgFrame6.svg",
+        "width": 44.796875,
+        "height": 44.796875,
+        "naturalWidth": 45
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgFrame7.svg",
+        "width": 44.796875,
+        "height": 44.796875,
+        "naturalWidth": 45
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgRectangle1.png",
+        "width": 447.1875,
+        "height": 259.640625,
+        "naturalWidth": 870
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgCreditCard.svg",
+        "width": 24,
+        "height": 24,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgLocalAtm.svg",
+        "width": 24,
+        "height": 24,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgLocalAtm.svg",
+        "width": 24,
+        "height": 24,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgLogoOficialSobreFondoOscuro.svg",
+        "width": 208,
+        "height": 60,
+        "naturalWidth": 208
+      }
+    ],
+    "sections": [
+      {
+        "id": "inicio",
+        "y": 0,
+        "height": 760
+      },
+      {
+        "id": "facts",
+        "y": 820,
+        "height": 230
+      },
+      {
+        "id": "academia",
+        "y": 1050,
+        "height": 769
+      },
+      {
+        "id": "metodologia",
+        "y": 1819,
+        "height": 1195
+      },
+      {
+        "id": "experiencia",
+        "y": 3014,
+        "height": 1397
+      },
+      {
+        "id": "programa",
+        "y": 4411,
+        "height": 1001
+      },
+      {
+        "id": "sede",
+        "y": 5463,
+        "height": 1117
+      },
+      {
+        "id": "preguntas",
+        "y": 6580,
+        "height": 648
+      }
+    ],
+    "overflowingText": [],
+    "header": [
+      {
+        "name": "brand",
+        "x": 24,
+        "y": 15,
+        "width": 160
+      },
+      {
+        "name": "menu-toggle",
+        "x": 322,
+        "y": 16,
+        "width": 44
+      }
+    ],
+    "browserErrors": [],
+    "interactions": "passed",
+    "privateStorage": "empty"
+  },
+  {
+    "width": 320,
+    "documentWidth": 320,
+    "images": [
+      {
+        "source": "assets/imgLogoOficialSobreFondoOscuro1.svg",
+        "width": 160,
+        "height": 46,
+        "naturalWidth": 160
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight.svg",
+        "width": 0,
+        "height": 0,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/img02HeroElJuegoEmpiezaContigo.png",
+        "width": 320,
+        "height": 720,
+        "naturalWidth": 2200
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgEntrenamientoOficialReferenciaRojoVino.png",
+        "width": 288,
+        "height": 353.859375,
+        "naturalWidth": 459
+      },
+      {
+        "source": "assets/imgFrame5.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame4.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame3.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame2.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame1.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgFrame.svg",
+        "width": 28,
+        "height": 28,
+        "naturalWidth": 28
+      },
+      {
+        "source": "assets/imgEntrenamientoOficialReferenciaRojoVino.png",
+        "width": 288,
+        "height": 353.859375,
+        "naturalWidth": 459
+      },
+      {
+        "source": "assets/imgEntrenamientoOficialReferenciaRojoVino1.png",
+        "width": 288,
+        "height": 194.390625,
+        "naturalWidth": 2197
+      },
+      {
+        "source": "assets/imgFrame6.svg",
+        "width": 44.796875,
+        "height": 44.796875,
+        "naturalWidth": 45
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgFrame7.svg",
+        "width": 44.796875,
+        "height": 44.796875,
+        "naturalWidth": 45
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgRectangle1.png",
+        "width": 376.578125,
+        "height": 218.625,
+        "naturalWidth": 870
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgCreditCard.svg",
+        "width": 24,
+        "height": 24,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgLocalAtm.svg",
+        "width": 24,
+        "height": 24,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgLocalAtm.svg",
+        "width": 24,
+        "height": 24,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgIaIconArrowUpRight1.svg",
+        "width": 24.328125,
+        "height": 24.328125,
+        "naturalWidth": 24
+      },
+      {
+        "source": "assets/imgLogoOficialSobreFondoOscuro.svg",
+        "width": 208,
+        "height": 60,
+        "naturalWidth": 208
+      }
+    ],
+    "sections": [
+      {
+        "id": "inicio",
+        "y": 0,
+        "height": 720
+      },
+      {
+        "id": "facts",
+        "y": 780,
+        "height": 228
+      },
+      {
+        "id": "academia",
+        "y": 1008,
+        "height": 784
+      },
+      {
+        "id": "metodologia",
+        "y": 1792,
+        "height": 1335
+      },
+      {
+        "id": "experiencia",
+        "y": 3127,
+        "height": 1468
+      },
+      {
+        "id": "programa",
+        "y": 4596,
+        "height": 1024
+      },
+      {
+        "id": "sede",
+        "y": 5671,
+        "height": 1165
+      },
+      {
+        "id": "preguntas",
+        "y": 6836,
+        "height": 766
+      }
+    ],
+    "overflowingText": [],
+    "header": [
+      {
+        "name": "brand",
+        "x": 16,
+        "y": 15,
+        "width": 160
+      },
+      {
+        "name": "menu-toggle",
+        "x": 260,
+        "y": 16,
+        "width": 44
+      }
+    ],
+    "browserErrors": [],
+    "interactions": "passed",
+    "privateStorage": "empty"
+  }
+]

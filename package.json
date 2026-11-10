@@ -1,0 +1,12 @@
+{
+  "name": "iniesta-academy-merida",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Vista previa de la landing de Iniesta Academy Mérida, basada en Figma.",
+  "scripts": {
+    "dev": "node scripts/preview.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node --check script.js && node scripts/check.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

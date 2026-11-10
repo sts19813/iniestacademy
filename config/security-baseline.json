@@ -1,0 +1,123 @@
+{
+  "policyVersion": "1.0.0",
+  "updatedOn": "2026-11-09",
+  "status": "specification_only_not_enforced",
+  "project": "Iniesta Academy web",
+  "business": {
+    "country": "MX",
+    "currency": "MXN",
+    "timezoneProposed": "America/Merida",
+    "deferredPayments": "deposit_and_customer_initiated_installments",
+    "automaticChargesEnabled": false,
+    "paymentProvider": null
+  },
+  "browser": {
+    "privateDataPersistenceAllowed": false,
+    "authTokensInWebStorageAllowed": false,
+    "privateServiceWorkerCacheAllowed": false,
+    "localFormDraftsAllowed": false,
+    "privateResponsesCacheControl": "private, no-store",
+    "bulkExportsEnabled": false,
+    "allowedCredential": "opaque_httponly_session_cookie"
+  },
+  "identity": {
+    "provider": "google_oidc",
+    "flow": "authorization_code_server_side",
+    "pkceMethod": "S256",
+    "scopes": ["openid", "email", "profile"],
+    "uniqueIdentityFields": ["issuer", "sub"],
+    "stateRequired": true,
+    "nonceRequired": true,
+    "transactionTtlSeconds": 600,
+    "refreshTokenPersistenceAllowed": false,
+    "autoLinkByEmailAllowed": false,
+    "publicAdminSignupAllowed": false
+  },
+  "session": {
+    "cookie": {
+      "name": "__Host-ia_session",
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax",
+      "path": "/",
+      "domain": null,
+      "persistent": false
+    },
+    "randomBytes": 32,
+    "storeIdentifierHashOnly": true,
+    "customerIdleTimeoutSeconds": 3600,
+    "customerAbsoluteTimeoutSeconds": 86400,
+    "staffIdleTimeoutSeconds": 900,
+    "staffAbsoluteTimeoutSeconds": 28800,
+    "sensitiveActionReauthenticationMaxAgeSeconds": 300,
+    "staffMfaRequired": true,
+    "revokeOnRoleChange": true
+  },
+  "authorization": {
+    "defaultDecision": "deny",
+    "checkEveryServerOperation": true,
+    "resourceOwnershipRequired": true,
+    "staffScopeRequired": true,
+    "csrfProtectionRequired": true,
+    "externalCorsEnabled": false,
+    "productionOrigins": [],
+    "productionOauthRedirectUris": []
+  },
+  "payments": {
+    "hostedCheckoutRequired": true,
+    "cardDataCollectionByApplicationAllowed": false,
+    "serverCalculatedAmountsRequired": true,
+    "moneyRepresentation": "integer_minor_units",
+    "webhookSignatureRequired": true,
+    "webhookTimestampToleranceSeconds": null,
+    "webhookTimestampToleranceSource": "selected_provider_sdk_and_documentation",
+    "webhookDurableInboxRequired": true,
+    "paymentAndEventDeduplicationRequired": true,
+    "creationAndRefundIdempotencyRequired": true,
+    "redirectCanConfirmPayment": false,
+    "financialCorrections": "append_compensating_movement",
+    "closedCutoffsMutable": false
+  },
+  "http": {
+    "productionHttpsRequired": true,
+    "minimumTlsVersion": "1.2",
+    "hstsMaxAgeSeconds": 31536000,
+    "hstsIncludeSubdomains": false,
+    "hstsPreload": false,
+    "referrerPolicy": "no-referrer",
+    "xContentTypeOptions": "nosniff",
+    "xFrameOptions": "DENY",
+    "permissionsPolicy": "camera=(), microphone=(), geolocation=()",
+    "cspRuntimePolicyRequired": true,
+    "cspProductionUnsafeEvalAllowed": false,
+    "maxJsonBodyBytes": 65536,
+    "initialMaxWebhookBodyBytes": 262144,
+    "fileUploadsEnabled": false,
+    "defaultPageSize": 50,
+    "maxPageSize": 100
+  },
+  "rateLimits": {
+    "distributedStoreRequired": true,
+    "oauthStartPerIp": { "requests": 10, "windowSeconds": 600 },
+    "mfaFailuresPerAccountAndIp": { "requests": 5, "windowSeconds": 900 },
+    "leadSubmissionsPerIp": { "requests": 5, "windowSeconds": 3600 },
+    "checkoutStartsPerAccount": { "requests": 10, "windowSeconds": 600 },
+    "privateApiPerAccount": { "requests": 120, "windowSeconds": 60 },
+    "webhookPolicy": "provider_specific_separate_from_browser_limits"
+  },
+  "operations": {
+    "environmentsIsolated": true,
+    "productionSecretsInBrowserAllowed": false,
+    "sensitiveLogBodiesAllowed": false,
+    "databasePrivateAccessRequired": true,
+    "databaseRuntimeSuperuserAllowed": false,
+    "databaseRuntimeBypassRlsAllowed": false,
+    "backupEncryptionRequired": true,
+    "targetRpoSeconds": 3600,
+    "targetRtoSeconds": 14400,
+    "restoreExerciseBeforeLaunchRequired": true,
+    "retentionScheduleRequiredBeforeLaunch": true,
+    "productionConfigValidatorImplemented": false,
+    "unresolvedProductionSettingsMustBlockLaunch": true
+  }
+}
