@@ -305,3 +305,17 @@ body.dialog-open { overflow: hidden; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+.registration-page { min-height: 100vh; background: #e8eeed; padding: 32px 20px; }
+.registration-panel { max-width: 640px; margin: 0 auto; padding: clamp(24px, 5vw, 48px); background: #fff; border-radius: 12px; display: flex; flex-direction: column; gap: 18px; }
+.registration-panel h1 { font-size: 38px; line-height: 1.1; }
+.registration-panel p { line-height: 1.6; }
+.registration-panel > a:not(.button) { color: #006e86; font-weight: 700; }
+.registration-form { display: grid; gap: 16px; }
+.registration-form h2 { font-size: 21px; line-height: 1.3; margin-top: 10px; }
+.registration-form label { display: grid; gap: 6px; font-weight: 700; }
+.registration-form input { width: 100%; border: 1px solid #687b80; border-radius: 6px; padding: 12px; background: white; color: #101e24; font: inherit; }
+.registration-form .button { margin-top: 8px; }
+.registration-errors { border-left: 4px solid #9e1b32; padding: 12px; background: #fff0f2; }
+.registration-errors ul { margin: 8px 0 0 20px; }
+.registration-form .stomtickets-logo { width: 78px; height: auto; }

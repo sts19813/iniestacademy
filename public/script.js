@@ -36,9 +36,8 @@ const information = {
   inscripcion: {
     title: 'Tu próxima experiencia empieza aquí',
     paragraphs: [
-      'Las inscripciones aún no están abiertas en esta vista previa.',
-      'Próximamente podrás acceder con Google, registrar al participante y consultar las condiciones vigentes antes de pagar. Los pagos diferidos se harán mediante anticipo y abonos iniciados por ti.',
-      'Fechas, edades, horarios y precios del diseño están pendientes de confirmación. Esta página no reserva plazas ni realiza cobros.',
+      'Consulta la inscripción para verano de 2027 en la sección de sede y precio.',
+      'El precio vigente se muestra en la sección de sede y precio y el pago se realiza mediante Stripe. Las fechas exactas, los horarios y la sede están pendientes de confirmación.',
     ],
   },
   kit: {
@@ -51,19 +50,19 @@ const information = {
   },
   contacto: {
     title: 'Hablemos de fútbol',
-    paragraphs: ['Los canales de atención de Mérida están pendientes de confirmación.', 'El teléfono, correo y dirección mostrados en el diseño son ficticios. Publicaremos los datos oficiales antes de abrir las inscripciones.'],
+    paragraphs: ['Los canales de atención de Mérida están pendientes de confirmación.', 'El teléfono, correo y dirección mostrados en el diseño son ficticios. Publicaremos los datos oficiales cuando estén confirmados.'],
   },
   ubicacion: {
     title: 'Nos vemos en Mérida',
-    paragraphs: ['El mapa muestra la referencia visual del diseño. La dirección definitiva de la sede está pendiente de confirmación.', 'Publicaremos la ubicación oficial y las indicaciones para llegar antes de abrir las inscripciones.'],
+    paragraphs: ['El mapa muestra la referencia visual del diseño. La dirección definitiva de la sede está pendiente de confirmación.', 'Publicaremos la ubicación oficial y las indicaciones para llegar cuando estén confirmados.'],
   },
   privacidad: {
     title: 'Aviso de privacidad',
-    paragraphs: ['El aviso de privacidad oficial está pendiente de aprobación y se publicará antes de recopilar datos personales.', 'Esta vista previa no dispone de formularios de registro ni recopila datos de participantes o datos de pago.'],
+    paragraphs: ['El aviso de privacidad oficial está pendiente de aprobación y se publicará antes de recopilar datos personales.', 'El formulario solicita datos del participante y del tutor o comprador; el pago se realiza en Stripe.'],
   },
   terminos: {
     title: 'Términos y condiciones',
-    paragraphs: ['Esta es una vista previa de la propuesta. Los precios, fechas, edades y horarios mostrados en Figma presentan diferencias entre secciones y requieren confirmación.', 'Las condiciones de compra, reserva de cupo, abonos, cancelaciones y devoluciones se publicarán antes de habilitar las inscripciones. No se realizan compras desde esta página.'],
+    paragraphs: ['La inscripción tiene un costo de $8,200 MXN por participante para verano de 2027. Las fechas exactas, el horario y la sede están por confirmar.', 'No hay devoluciones.'],
   },
   cookies: {
     title: 'Política de cookies',
