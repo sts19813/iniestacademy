@@ -76,7 +76,7 @@ class RegistrationController extends Controller
                 'metadata' => ['registration_id' => $registration->id],
                 'expires_at' => time() + 1860,
                 'line_items' => [[
-                    'price_data' => ['currency' => $registration->currency, 'unit_amount' => $registration->amount, 'product_data' => ['name' => 'Inscripción Iniesta Academy Mérida — 20 al 24 de marzo de 2027']],
+                    'price_data' => ['currency' => $registration->currency, 'unit_amount' => $registration->amount, 'product_data' => ['name' => 'Inscripción Iniesta Academy Mérida — 20 al 24 de marzo de 2027', 'description' => 'Centro Universitario Montejo, Mérida, Yucatán']],
                     'quantity' => 1,
                 ]],
                 'success_url' => route('registration.return').'?session_id={CHECKOUT_SESSION_ID}',

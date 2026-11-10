@@ -58,7 +58,7 @@
             </div></fieldset>
             <label class="registration-consent"><input type="checkbox" name="privacy_consent" value="1" @checked(old('privacy_consent')) required /><span>He leído el aviso de privacidad y autorizo que me contacten sobre esta solicitud. *</span></label>
             <a class="registration-privacy-link" href="{{ route('privacy') }}">Consultar aviso de privacidad</a>
-<p class="registration-price">20 al 24 de marzo de 2027<br />@if (config('registration.promotion_amount'))<del>${{ number_format(config('registration.regular_amount') / 100, 2) }}</del> MXN · @endif Total por participante: <strong>${{ number_format((config('registration.promotion_amount') ?: config('registration.regular_amount')) / 100, 2) }} MXN</strong>.</p>
+<p class="registration-price">20 al 24 de marzo de 2027 · Centro Universitario Montejo, Mérida<br />@if (config('registration.promotion_amount'))<del>${{ number_format(config('registration.regular_amount') / 100, 2) }}</del> MXN · @endif Total por participante: <strong>${{ number_format((config('registration.promotion_amount') ?: config('registration.regular_amount')) / 100, 2) }} MXN</strong>.</p>
             <button class="button button-turquoise registration-submit" type="submit"><span>Continuar y pagar</span><img src="{{ asset('assets/imgIaIconArrowUpRight1.svg') }}" alt="" width="24" height="24" /></button>
           </form>
         </div>
@@ -66,7 +66,7 @@
     </section>
   </main>
   <footer class="site-footer"><div class="container"><div class="footer-grid">
-    <div class="footer-brand"><a href="{{ route('landing') }}" aria-label="Iniesta Academy, inicio"><img src="{{ asset('assets/imgLogoOficialSobreFondoOscuro.svg') }}" alt="Iniesta Academy" width="208" height="60" loading="lazy" /></a><h3>MÉRIDA, YUCATÁN</h3><p>{{ config('registration.contact') ?: 'Datos de contacto por confirmar.' }}<br />Ubicación por confirmar.</p></div>
+    <div class="footer-brand"><a href="{{ route('landing') }}" aria-label="Iniesta Academy, inicio"><img src="{{ asset('assets/imgLogoOficialSobreFondoOscuro.svg') }}" alt="Iniesta Academy" width="208" height="60" loading="lazy" /></a><h3>MÉRIDA, YUCATÁN</h3><p>{{ config('registration.contact') ?: 'Datos de contacto por confirmar.' }}<br />Centro Universitario Montejo, Mérida, Yucatán.</p></div>
     <nav aria-label="Navegación del pie"><h3>NAVEGACIÓN</h3><a href="{{ route('landing') }}#inicio">Inicio</a><a href="{{ route('landing') }}#academia">Academia</a><a href="{{ route('landing') }}#metodologia">Metodología</a><a href="{{ route('landing') }}#programa">Programas</a><a href="#datos">Inscripciones</a></nav>
     <nav aria-label="Información legal"><h3>LEGAL</h3><a href="{{ route('privacy') }}">Aviso de privacidad</a></nav>
     <div><h3>REDES SOCIALES</h3><p>Perfiles oficiales<br />por confirmar.</p></div>

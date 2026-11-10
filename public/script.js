@@ -37,7 +37,7 @@ const information = {
     title: 'Tu próxima experiencia empieza aquí',
     paragraphs: [
       'La clínica se realizará del 20 al 24 de marzo de 2027. Consulta la inscripción en la sección de sede y precio.',
-      'El precio vigente se muestra en la sección de sede y precio y el pago se realiza mediante Stripe. El horario y la sede están pendientes de confirmación.',
+      'El precio vigente se muestra en la sección de sede y precio y el pago se realiza mediante Stripe. La sede es Centro Universitario Montejo, en Mérida. El horario está pendiente de confirmación.',
     ],
   },
   kit: {
@@ -50,11 +50,11 @@ const information = {
   },
   contacto: {
     title: 'Hablemos de fútbol',
-    paragraphs: ['Los canales de atención de Mérida están pendientes de confirmación.', 'El teléfono, correo y dirección mostrados en el diseño son ficticios. Publicaremos los datos oficiales cuando estén confirmados.'],
+    paragraphs: ['Los canales de atención de Mérida están pendientes de confirmación.', 'Publicaremos los datos oficiales de contacto cuando estén confirmados.'],
   },
   ubicacion: {
     title: 'Nos vemos en Mérida',
-    paragraphs: ['El mapa muestra la referencia visual del diseño. La dirección definitiva de la sede está pendiente de confirmación.', 'Publicaremos la ubicación oficial y las indicaciones para llegar cuando estén confirmados.'],
+    paragraphs: ['La clínica se realizará en Centro Universitario Montejo, Mérida, Yucatán.', 'La dirección exacta y las indicaciones para llegar están pendientes de confirmación.'],
   },
   privacidad: {
     title: 'Aviso de privacidad',
@@ -62,7 +62,7 @@ const information = {
   },
   terminos: {
     title: 'Términos y condiciones',
-    paragraphs: ['La clínica se realizará del 20 al 24 de marzo de 2027. Consulta el precio vigente en la sección de sede y precio. El horario y la sede están por confirmar.'],
+    paragraphs: ['La clínica se realizará del 20 al 24 de marzo de 2027. Consulta el precio vigente en la sección de sede y precio. El horario y la dirección exacta están por confirmar.'],
   },
   cookies: {
     title: 'Política de cookies',
