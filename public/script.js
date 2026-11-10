@@ -62,7 +62,7 @@ const information = {
   },
   terminos: {
     title: 'Términos y condiciones',
-    paragraphs: ['La inscripción tiene un costo de $8,200 MXN por participante para verano de 2027. Las fechas exactas, el horario y la sede están por confirmar.', 'No hay devoluciones.'],
+    paragraphs: ['La inscripción tiene un costo de $8,200 MXN por participante para verano de 2027. Las fechas exactas, el horario y la sede están por confirmar.'],
   },
   cookies: {
     title: 'Política de cookies',

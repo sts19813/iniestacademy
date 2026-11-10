@@ -56,7 +56,7 @@
               <label><span>Nombre de camiseta <span class="field-optional">(opcional)</span></span><input name="shirt_name" value="{{ old('shirt_name') }}" maxlength="40" placeholder="Nombre para la camiseta" /></label>
             </div></fieldset>
             <a class="registration-privacy-link" href="{{ route('privacy') }}">Consultar aviso de privacidad</a>
-<p class="registration-price">Verano 2027 · Fechas exactas por confirmar<br />@if (config('registration.promotion_amount'))<del>${{ number_format(config('registration.regular_amount') / 100, 2) }}</del> MXN · @endif Total por participante: <strong>${{ number_format((config('registration.promotion_amount') ?: config('registration.regular_amount')) / 100, 2) }} MXN</strong>. No hay devoluciones.</p>
+<p class="registration-price">Verano 2027 · Fechas exactas por confirmar<br />@if (config('registration.promotion_amount'))<del>${{ number_format(config('registration.regular_amount') / 100, 2) }}</del> MXN · @endif Total por participante: <strong>${{ number_format((config('registration.promotion_amount') ?: config('registration.regular_amount')) / 100, 2) }} MXN</strong>.</p>
             <button class="button button-turquoise registration-submit" type="submit"><span>Continuar y pagar</span><img src="{{ asset('assets/imgIaIconArrowUpRight1.svg') }}" alt="" width="24" height="24" /></button>
           </form>
         </div>
