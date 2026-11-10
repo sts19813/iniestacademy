@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Descubre Iniesta Academy Mérida: la metodología de Andrés Iniesta, formación, valores y una experiencia de fútbol para niños y niñas." />
     <meta name="theme-color" content="#101e24" />
-    <link rel="icon" type="image/svg+xml" href="{{ asset('assets/imgLogoOficialSobreFondoOscuro1.svg') }}" />
+    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}" />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="preload" href="{{ asset('assets/raleway-800.ttf') }}" as="font" type="font/ttf" crossorigin />
     <link rel="preload" href="{{ asset('assets/img02HeroElJuegoEmpiezaContigo.png') }}" as="image" />
