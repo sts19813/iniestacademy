@@ -16,4 +16,12 @@ class ExampleTest extends TestCase
         $this->assertEmpty($response->headers->getCookies());
         $this->post('/')->assertStatus(405);
     }
+
+    public function test_promotion_shows_configured_prices_and_percentage(): void
+    {
+        config(['registration.regular_amount' => 1099900, 'registration.promotion_amount' => 820000]);
+        $this->get('/')->assertOk()->assertSee('25% de descuento por tiempo limitado')->assertSee('$10,999')->assertSee('$8,200');
+        config(['registration.promotion_amount' => null]);
+        $this->get('/')->assertDontSee('de descuento por tiempo limitado');
+    }
 }
