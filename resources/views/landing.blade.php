@@ -39,7 +39,7 @@
           </div>
         </div>
       </section>
-      <div class="ticker ticker-black" aria-label="Únete a la familia · Join the family"><div aria-hidden="true"><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span></div></div>
+      <div class="ticker ticker-black" aria-label="Únete a la familia · Join the family"><div class="ticker-track" aria-hidden="true"><div class="ticker-group"><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span></div><div class="ticker-group"><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span></div></div></div>
       <section class="facts" aria-label="La clínica en cifras" data-node-id="74:746">
         <dl class="container facts-grid">
           <div><dd>05</dd><dt>DÍAS DE FÚTBOL</dt></div><div><dd>Por confirmar</dd><dt>TODOS LOS NIVELES</dt></div><div><dd>Verano 2027</dd><dt>FECHAS POR CONFIRMAR</dt></div><div><dd>${{ number_format((config('registration.promotion_amount') ?: config('registration.regular_amount')) / 100, 2) }} <small>MXN</small></dd><dt>TOTAL CON UNIFORME</dt></div>
@@ -81,7 +81,7 @@
           </div>
         </div>
       </section>
-      <div class="ticker ticker-turquoise" aria-label="Únete a Iniesta Academy"><div aria-hidden="true"><strong>ÚNETE A INIESTA ACADEMY</strong><strong>ÚNETE A INIESTA ACADEMY</strong><strong>ÚNETE A INIESTA ACADEMY</strong><strong>ÚNETE A INIESTA ACADEMY</strong><strong>ÚNETE A INIESTA ACADEMY</strong><strong>ÚNETE A INIESTA ACADEMY</strong></div></div>
+      <div class="ticker ticker-turquoise" aria-label="Únete a Iniesta Academy"><div class="ticker-track" aria-hidden="true"><div class="ticker-group"><strong>ÚNETE A INIESTA ACADEMY</strong><strong>ÚNETE A INIESTA ACADEMY</strong><strong>ÚNETE A INIESTA ACADEMY</strong><strong>ÚNETE A INIESTA ACADEMY</strong><strong>ÚNETE A INIESTA ACADEMY</strong><strong>ÚNETE A INIESTA ACADEMY</strong></div><div class="ticker-group"><strong>ÚNETE A INIESTA ACADEMY</strong><strong>ÚNETE A INIESTA ACADEMY</strong><strong>ÚNETE A INIESTA ACADEMY</strong><strong>ÚNETE A INIESTA ACADEMY</strong><strong>ÚNETE A INIESTA ACADEMY</strong><strong>ÚNETE A INIESTA ACADEMY</strong></div></div></div>
       <section id="sede" class="section venue" aria-labelledby="venue-title" data-node-id="74:799">
         <div class="container"><p class="eyebrow venue-eyebrow">03 / NOS VEMOS EN LA CANCHA</p>
           <div class="split">
@@ -97,7 +97,7 @@
           <details open><summary>¿Enviar el formulario reserva una plaza?</summary><p>El pago se procesa de forma segura en Stripe. Conserva tu comprobante de pago.</p></details>
         </div></div>
       </section>
-      <div class="ticker ticker-wine" aria-label="Únete a la familia · Join the family"><div aria-hidden="true"><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span></div></div>
+      <div class="ticker ticker-wine" aria-label="Únete a la familia · Join the family"><div class="ticker-track" aria-hidden="true"><div class="ticker-group"><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span></div><div class="ticker-group"><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span><strong>ÚNETE A LA FAMILIA</strong><span>JOIN THE FAMILY</span></div></div></div>
     </main>
     <footer class="site-footer" data-node-id="74:827"><div class="container"><div class="footer-grid">
       <div class="footer-brand"><a href="#inicio" aria-label="Volver al inicio"><img src="{{ asset('assets/imgLogoOficialSobreFondoOscuro.svg') }}" alt="Iniesta Academy" width="208" height="60" loading="lazy" /></a><h3>MÉRIDA, YUCATÁN</h3><p>{{ config('registration.contact') ?: 'Datos de contacto por confirmar.' }}<br />Ubicación por confirmar.</p></div>

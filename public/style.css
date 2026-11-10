@@ -76,12 +76,14 @@ h3 { font-size: 24px; line-height: 30px; font-weight: 700; }
 .hero-cta { width: 292px; justify-content: space-between; }
 .hero-cta > img { margin-left: 6px; }
 .ticker { overflow: hidden; color: white; height: 76px; display: flex; align-items: center; }
-.ticker > div { display: flex; align-items: center; gap: 24px; width: max-content; padding-inline: 24px; white-space: nowrap; font-size: 26px; line-height: 36px; }
+.ticker-track { display: flex; width: max-content; flex: none; animation: ticker-scroll 60s linear infinite; }
+.ticker-group { display: flex; flex: none; align-items: center; gap: 24px; padding-right: 24px; white-space: nowrap; font-size: 26px; line-height: 36px; }
+@keyframes ticker-scroll { to { transform: translateX(-50%); } }
 .ticker strong { font-weight: 800; }
 .ticker-black { background: #000; }
 .ticker-wine { background: var(--wine); }
 .ticker-turquoise { background: var(--turquoise); height: 64px; }
-.ticker-turquoise > div { font-size: 18px; line-height: 28px; padding: 0; }
+.ticker-turquoise .ticker-group { font-size: 18px; line-height: 28px; }
 .facts { background: var(--turquoise); color: var(--paper); padding-block: 40px; }
 .facts-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 32px; }
 .facts-grid > div { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
@@ -235,9 +237,9 @@ body.dialog-open { overflow: hidden; }
   .hero-actions { flex-wrap: wrap; gap: 12px; }
   .hero-cta { width: 270px; }
   .ticker { height: 60px; }
-  .ticker > div { font-size: 20px; line-height: 28px; gap: 20px; padding-inline: 20px; }
+  .ticker-group { font-size: 20px; line-height: 28px; gap: 20px; padding-right: 20px; }
   .ticker-turquoise { height: 52px; }
-  .ticker-turquoise > div { font-size: 15px; }
+  .ticker-turquoise .ticker-group { font-size: 15px; }
   .facts { padding-block: 32px; }
   .facts-grid { gap: 30px 16px; }
   .facts dd { font-size: 32px; line-height: 40px; }
@@ -303,6 +305,7 @@ body.dialog-open { overflow: hidden; }
 }
 @media (prefers-reduced-motion:reduce) {
   html { scroll-behavior: auto; }
+  .ticker-track { animation: none; }
   *, *::before, *::after { transition: none !important; }
 }
 
