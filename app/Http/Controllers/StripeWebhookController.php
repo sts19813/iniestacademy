@@ -20,11 +20,11 @@ class StripeWebhookController extends Controller
         } catch (Throwable $e) {
             return response('Invalid signature', 400);
         }
-        if (! in_array($event->type, ['checkout.session.completed', 'checkout.session.async_payment_succeeded'], true)) {
+        if (! in_array($event->type, ['checkout.session.completed', 'checkout.session.async_payment_succeeded', 'checkout.session.async_payment_failed'], true)) {
             return response('OK', 200);
         }
         $session = $event->data->object;
-        if ($session->payment_status !== 'paid') {
+        if ($session->payment_status !== 'paid' && $event->type !== 'checkout.session.async_payment_failed') {
             return response('OK', 200);
         }
         $id = $session->metadata->registration_id ?? null;
@@ -35,7 +35,14 @@ class StripeWebhookController extends Controller
         if (! $registration || $session->client_reference_id !== $id || $session->amount_total !== $registration->amount || $session->currency !== $registration->currency || ($registration->stripe_session_id && $registration->stripe_session_id !== $session->id)) {
             return response('Invalid payment', 400);
         }
-        Registration::whereKey($id)->where('status', 'pending')->update(['status' => 'paid', 'paid_at' => now(), 'stripe_session_id' => $session->id]);
+        if ($event->type === 'checkout.session.async_payment_failed') {
+            if ($session->payment_status !== 'unpaid') {
+                return response('Invalid payment', 400);
+            }
+            Registration::whereKey($id)->where('status', 'pending')->update(['status' => 'failed', 'stripe_session_id' => $session->id]);
+        } else {
+            Registration::whereKey($id)->where('status', 'pending')->update(['status' => 'paid', 'paid_at' => now(), 'stripe_session_id' => $session->id]);
+        }
 
         return response('OK', 200);
     }

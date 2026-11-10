@@ -58,7 +58,6 @@ class RegistrationController extends Controller
         try {
             $checkout = $stripe->checkout->sessions->create([
                 'mode' => 'payment',
-                'payment_method_types' => ['card'],
                 'customer_email' => $data['buyer_email'],
                 'client_reference_id' => $registration->id,
                 'metadata' => ['registration_id' => $registration->id],
