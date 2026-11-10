@@ -107,6 +107,6 @@
     </div><p class="copyright">© 2026 Iniesta Academy Mérida. Todos los derechos reservados.</p></div></footer>
     <dialog id="information-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-body"><div class="dialog-content"><button class="dialog-close" type="button" aria-label="Cerrar ventana">×</button><p class="eyebrow">INIESTA ACADEMY MÉRIDA</p><h2 id="dialog-title"></h2><div id="dialog-body"></div><button class="button button-black dialog-done" type="button">Entendido</button></div></dialog>
     <noscript><p class="noscript-notice">Activa JavaScript para abrir el menú móvil y consultar los detalles. Puedes inscribirte desde el botón de inscripción.</p></noscript>
-    <script src="{{ asset('script.js') }}" defer></script>
+    <script src="{{ asset('script.js') }}?v={{ substr(md5_file(public_path('script.js')), 0, 12) }}" defer></script>
   </body>
 </html>
