@@ -55,6 +55,7 @@
               <label>Talla calcetines *<select name="socks_size" required><option value="">Selecciona una talla</option>@foreach (['CH','M','G','EG'] as $size)<option value="{{ $size }}" @selected(old('socks_size') === $size)>{{ $size }}</option>@endforeach</select></label>
               <label><span>Nombre de camiseta <span class="field-optional">(opcional)</span></span><input name="shirt_name" value="{{ old('shirt_name') }}" maxlength="40" placeholder="Nombre para la camiseta" /></label>
             </div></fieldset>
+            <label class="registration-consent"><input type="checkbox" name="privacy_consent" value="1" @checked(old('privacy_consent')) required /><span>He leído el aviso de privacidad y autorizo que me contacten sobre esta solicitud. *</span></label>
             <a class="registration-privacy-link" href="{{ route('privacy') }}">Consultar aviso de privacidad</a>
 <p class="registration-price">Verano 2027 · Fechas exactas por confirmar<br />@if (config('registration.promotion_amount'))<del>${{ number_format(config('registration.regular_amount') / 100, 2) }}</del> MXN · @endif Total por participante: <strong>${{ number_format((config('registration.promotion_amount') ?: config('registration.regular_amount')) / 100, 2) }} MXN</strong>.</p>
             <button class="button button-turquoise registration-submit" type="submit"><span>Continuar y pagar</span><img src="{{ asset('assets/imgIaIconArrowUpRight1.svg') }}" alt="" width="24" height="24" /></button>

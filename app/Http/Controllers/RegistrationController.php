@@ -36,7 +36,8 @@ class RegistrationController extends Controller
             'uniform_size' => ['required', 'in:CH,M,G,EG'],
             'socks_size' => ['required', 'in:CH,M,G,EG'],
             'shirt_name' => ['nullable', 'string', 'max:40'],
-        ]);
+            'privacy_consent' => ['accepted'],
+        ], ['privacy_consent.accepted' => 'Debes aceptar el aviso de privacidad para continuar.']);
         $amount = config('registration.promotion_amount') ?: config('registration.regular_amount');
         $capacity = config('registration.capacity');
         abort_unless($amount >= 1000 && $capacity > 0 && (! $this->promotionInvalid()), 503);
@@ -55,8 +56,8 @@ class RegistrationController extends Controller
         // SQLite serializes this conditional INSERT, so simultaneous requests cannot exceed capacity.
         $id = (string) Str::uuid();
         $now = now();
-        $inserted = DB::affectingStatement("INSERT INTO registrations (id, buyer_name, buyer_email, buyer_phone, participant_name, participant_birth_date, participant_details, status, amount, currency, created_at, updated_at) SELECT ?, ?, ?, ?, ?, ?, ?, 'pending', ?, ?, ?, ? WHERE (SELECT COUNT(*) FROM registrations WHERE status IN ('pending', 'paid')) < ?", [
-            $id, Crypt::encryptString($data['buyer_name']), Crypt::encryptString($data['buyer_email']), Crypt::encryptString($data['buyer_phone']), Crypt::encryptString($data['participant_name']), Crypt::encryptString($data['participant_birth_date']), Crypt::encryptString(json_encode(collect($data)->only(['buyer_city', 'participant_position', 'football_years', 'birthplace', 'uniform_size', 'socks_size', 'shirt_name'])->all(), JSON_THROW_ON_ERROR)), $amount, config('registration.currency'), $now, $now, $capacity,
+        $inserted = DB::affectingStatement("INSERT INTO registrations (id, buyer_name, buyer_email, buyer_phone, participant_name, participant_birth_date, participant_details, privacy_accepted_at, privacy_notice_hash, status, amount, currency, created_at, updated_at) SELECT ?, ?, ?, ?, ?, ?, ?, ?, ?, 'pending', ?, ?, ?, ? WHERE (SELECT COUNT(*) FROM registrations WHERE status IN ('pending', 'paid')) < ?", [
+            $id, Crypt::encryptString($data['buyer_name']), Crypt::encryptString($data['buyer_email']), Crypt::encryptString($data['buyer_phone']), Crypt::encryptString($data['participant_name']), Crypt::encryptString($data['participant_birth_date']), Crypt::encryptString(json_encode(collect($data)->only(['buyer_city', 'participant_position', 'football_years', 'birthplace', 'uniform_size', 'socks_size', 'shirt_name'])->all(), JSON_THROW_ON_ERROR)), $now, hash_file('sha256', resource_path('views/privacy.blade.php')), $amount, config('registration.currency'), $now, $now, $capacity,
         ]);
         if (! $inserted) {
             return back()->withInput()->withErrors(['payment' => 'Por el momento no hay lugares disponibles.']);

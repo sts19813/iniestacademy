@@ -27,12 +27,18 @@ class RegistrationTest extends TestCase
             }
         };
         ApiRequestor::setHttpClient($client);
-        $data = ['buyer_name' => 'Comprador Test', 'buyer_email' => 'test@example.com', 'buyer_phone' => '9991234567', 'participant_name' => 'Jugador Test', 'participant_birth_date' => '2015-01-01', 'buyer_city' => 'Mérida', 'participant_position' => 'Defensa', 'football_years' => 3, 'birthplace' => 'Mérida', 'uniform_size' => 'M', 'socks_size' => 'M', 'shirt_name' => 'Jugador', 'amount' => 1];
+        $data = ['buyer_name' => 'Comprador Test', 'buyer_email' => 'test@example.com', 'buyer_phone' => '9991234567', 'participant_name' => 'Jugador Test', 'participant_birth_date' => '2015-01-01', 'buyer_city' => 'Mérida', 'participant_position' => 'Defensa', 'football_years' => 3, 'birthplace' => 'Mérida', 'uniform_size' => 'M', 'socks_size' => 'M', 'shirt_name' => 'Jugador', 'privacy_consent' => '1', 'amount' => 1];
+        $withoutConsent = $data;
+        unset($withoutConsent['privacy_consent']);
+        $this->post('/inscripcion', $withoutConsent)->assertSessionHasErrors('privacy_consent');
+        $this->assertSame(0, Registration::count());
         $this->post('/inscripcion', $data)->assertRedirect('https://checkout.stripe.com/test');
         $this->assertSame(700000, $client->params['line_items'][0]['price_data']['unit_amount']);
         $this->assertSame(700000, Registration::first()->amount);
         $this->assertSame(1, Registration::count());
         $this->assertSame('Mérida', Registration::first()->participant_details['buyer_city']);
+        $this->assertNotNull(Registration::first()->privacy_accepted_at);
+        $this->assertSame(hash_file('sha256', resource_path('views/privacy.blade.php')), Registration::first()->privacy_notice_hash);
         $this->assertNotSame('Comprador Test', \DB::table('registrations')->value('buyer_name'));
         $this->post('/inscripcion', $data)->assertSessionHasErrors('payment');
         $this->assertSame(1, Registration::count());

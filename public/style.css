@@ -401,3 +401,7 @@ body.dialog-open { overflow: hidden; }
 .privacy-inner section h2 { font-size: 23px; line-height: 30px; margin-bottom: 12px; }
 .privacy-inner section p { font-size: 15px; line-height: 26px; margin-top: 10px; }
 .privacy-inner section a { color: #006e86; text-decoration: underline; }
+
+.registration-consent { display: flex; align-items: flex-start; gap: 12px; color: #77848a; font-size: 13px; line-height: 20px; cursor: pointer; }
+.registration-consent input { flex: none; width: 18px; height: 18px; margin: 1px 0 0; accent-color: var(--turquoise); cursor: pointer; }
+.registration-consent input:focus-visible { outline: 2px solid var(--turquoise); outline-offset: 3px; }
