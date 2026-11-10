@@ -36,7 +36,6 @@
         <div class="registration-main">
           <h2>Inscripción a la clínica</h2>
           <p class="registration-form-note">Paso 1 de 2 · Datos de inscripción<br />Los campos con * son obligatorios.</p>
-          <p class="registration-price">Verano 2027 · Fechas exactas por confirmar<br />@if (config('registration.promotion_amount'))<del>${{ number_format(config('registration.regular_amount') / 100, 2) }}</del> MXN · @endif Total por participante: <strong>${{ number_format((config('registration.promotion_amount') ?: config('registration.regular_amount')) / 100, 2) }} MXN</strong>. No hay devoluciones.</p>
           @if ($errors->any())<div class="registration-errors" role="alert"><strong>Revisa los siguientes datos:</strong><ul>@foreach ($errors->all() as $error)<li>{{ $error }}</li>@endforeach</ul></div>@endif
           <form method="post" action="{{ route('registration.store') }}" class="registration-details-form">
             @csrf
@@ -56,7 +55,8 @@
               <label>Talla calcetines *<select name="socks_size" required><option value="">Selecciona una talla</option>@foreach (['CH','M','G','EG'] as $size)<option value="{{ $size }}" @selected(old('socks_size') === $size)>{{ $size }}</option>@endforeach</select></label>
               <label><span>Nombre de camiseta <span class="field-optional">(opcional)</span></span><input name="shirt_name" value="{{ old('shirt_name') }}" maxlength="40" placeholder="Nombre para la camiseta" /></label>
             </div></fieldset>
-            <p class="registration-privacy">El aviso de privacidad oficial está pendiente de publicación. Tus datos se usarán para gestionar la inscripción.</p>
+            <a class="registration-privacy-link" href="{{ route('privacy') }}">Consultar aviso de privacidad</a>
+<p class="registration-price">Verano 2027 · Fechas exactas por confirmar<br />@if (config('registration.promotion_amount'))<del>${{ number_format(config('registration.regular_amount') / 100, 2) }}</del> MXN · @endif Total por participante: <strong>${{ number_format((config('registration.promotion_amount') ?: config('registration.regular_amount')) / 100, 2) }} MXN</strong>. No hay devoluciones.</p>
             <button class="button button-turquoise registration-submit" type="submit"><span>Continuar y pagar</span><img src="{{ asset('assets/imgIaIconArrowUpRight1.svg') }}" alt="" width="24" height="24" /></button>
           </form>
         </div>
@@ -66,7 +66,7 @@
   <footer class="site-footer"><div class="container"><div class="footer-grid">
     <div class="footer-brand"><a href="{{ route('landing') }}" aria-label="Iniesta Academy, inicio"><img src="{{ asset('assets/imgLogoOficialSobreFondoOscuro.svg') }}" alt="Iniesta Academy" width="208" height="60" loading="lazy" /></a><h3>MÉRIDA, YUCATÁN</h3><p>{{ config('registration.contact') ?: 'Datos de contacto por confirmar.' }}<br />Ubicación por confirmar.</p></div>
     <nav aria-label="Navegación del pie"><h3>NAVEGACIÓN</h3><a href="{{ route('landing') }}#inicio">Inicio</a><a href="{{ route('landing') }}#academia">Academia</a><a href="{{ route('landing') }}#metodologia">Metodología</a><a href="{{ route('landing') }}#programa">Programas</a><a href="#datos">Inscripciones</a></nav>
-    <div><h3>LEGAL</h3><p>Aviso de privacidad<br />y términos pendientes<br />de publicación.</p></div>
+    <nav aria-label="Información legal"><h3>LEGAL</h3><a href="{{ route('privacy') }}">Aviso de privacidad</a></nav>
     <div><h3>REDES SOCIALES</h3><p>Perfiles oficiales<br />por confirmar.</p></div>
   </div><p class="copyright">© {{ date('Y') }} Iniesta Academy Mérida. Todos los derechos reservados.</p></div></footer>
 </body>

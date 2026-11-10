@@ -389,3 +389,15 @@ body.dialog-open { overflow: hidden; }
   .registration-hero-copy h1 { font-size: 30px; }
   .registration-hero-image { height: 190px; }
 }
+
+.registration-privacy-link { width: fit-content; font-size: 13px; text-decoration: underline; text-underline-offset: 3px; }
+.registration-details-form .registration-price { margin-top: 0; }
+.privacy-content { padding: 64px var(--gutter) 100px; background: #fff; }
+.privacy-inner { max-width: 760px; margin: 0 auto; }
+.privacy-back { display: inline-block; margin-bottom: 48px; font-size: 14px; text-decoration: underline; text-underline-offset: 3px; }
+.privacy-inner h1 { font-size: clamp(36px, 5vw, 56px); line-height: 1.08; margin: 18px 0 24px; }
+.privacy-draft { padding: 16px; background: #eef7f8; line-height: 1.6; }
+.privacy-inner section { margin-top: 36px; }
+.privacy-inner section h2 { font-size: 23px; line-height: 30px; margin-bottom: 12px; }
+.privacy-inner section p { font-size: 15px; line-height: 26px; margin-top: 10px; }
+.privacy-inner section a { color: #006e86; text-decoration: underline; }

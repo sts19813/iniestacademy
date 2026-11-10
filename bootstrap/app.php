@@ -13,6 +13,7 @@ return Application::configure(basePath: dirname(__DIR__))
         commands: __DIR__.'/../routes/console.php',
         then: function () {
             Route::get('/', fn () => view('landing'))->name('landing');
+            Route::get('/aviso-de-privacidad', fn () => view('privacy'))->name('privacy');
             Route::post('/stripe/webhook', StripeWebhookController::class)->name('stripe.webhook');
             Route::middleware('web')->group(function () {
                 Route::get('/inscripcion', [RegistrationController::class, 'create'])->name('registration.create');
