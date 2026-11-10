@@ -45,7 +45,7 @@ Antes de activar cobros faltan la configuración DNS y SSL del dominio, el endpo
 
 ## Panel administrativo
 
-El panel está en `/admin/acceso`. La primera cuenta se crea únicamente desde una sesión SSH de confianza con `php artisan admin:setup admin`: el comando solicita una contraseña de al menos 14 caracteres sin mostrarla, muestra una clave para una aplicación de autenticación TOTP y pide un código para verificarla antes de guardar. La clave TOTP se muestra una sola vez; no debe compartirse por chat. No hay registro público de administradores.
+El panel está en `/admin/acceso`. La primera cuenta se crea desde una sesión SSH de confianza con `php artisan admin:setup admin`: el comando solicita una contraseña de al menos 14 caracteres sin mostrarla, muestra una clave para una aplicación de autenticación TOTP y pide un código para verificarla antes de guardar. La clave TOTP se muestra una sola vez; no debe compartirse por chat. Como alternativa, `php artisan admin:activation-link admin` genera un enlace temporal de un solo uso: la persona administradora define su contraseña y vincula su autenticador en el navegador. El enlace vence en 30 minutos y deja de funcionar al usarse. Una vez iniciada la activación, debe completarse en 15 minutos. No hay registro público de administradores.
 
 Si se pierde el acceso, `php artisan admin:reset admin` sustituye contraseña y autenticador desde SSH y revoca las sesiones existentes. El acceso requiere contraseña y código, limita intentos y cierra la sesión tras 15 minutos de inactividad o 8 horas como máximo. Los cambios de configuración requieren confirmar nuevamente ambos factores.
 
