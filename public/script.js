@@ -54,7 +54,7 @@ const information = {
   },
   ubicacion: {
     title: 'Nos vemos en Mérida',
-    paragraphs: ['La clínica se realizará en Centro Universitario Montejo, Mérida, Yucatán.', 'La dirección exacta y las indicaciones para llegar están pendientes de confirmación.'],
+    paragraphs: ['La clínica se realizará en Centro Universitario Montejo, Mérida, Yucatán.', 'Consulta la ubicación en Google Maps desde la sección de sede.'],
   },
   privacidad: {
     title: 'Aviso de privacidad',
@@ -62,7 +62,7 @@ const information = {
   },
   terminos: {
     title: 'Términos y condiciones',
-    paragraphs: ['La clínica se realizará del 20 al 24 de marzo de 2027. Consulta el precio vigente en la sección de sede y precio. El horario y la dirección exacta están por confirmar.'],
+    paragraphs: ['La clínica se realizará del 20 al 24 de marzo de 2027. Consulta el precio vigente en la sección de sede y precio. El horario está por confirmar.'],
   },
   cookies: {
     title: 'Política de cookies',

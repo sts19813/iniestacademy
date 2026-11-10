@@ -11,11 +11,11 @@
       <p>Hemos recibido el pago y confirmado la inscripción de <strong>{{ $registration->participant_name }}</strong> a Iniesta Academy Mérida.</p>
       <div style="background:#f3f8f9;border-radius:8px;padding:16px 20px;margin:24px 0;">
         <p style="margin:0 0 8px;"><strong>Fechas:</strong> 20 al 24 de marzo de 2027</p>
-        <p style="margin:0 0 8px;"><strong>Sede:</strong> Centro Universitario Montejo, Mérida, Yucatán</p>
+        <p style="margin:0 0 8px;"><strong>Sede:</strong> Centro Universitario Montejo, Mérida, Yucatán · <a href="https://maps.app.goo.gl/fKa6pLhiDpGuDqJ48" style="color:#007a95;">Ver en Google Maps</a></p>
         <p style="margin:0 0 8px;"><strong>Pago:</strong> ${{ number_format($registration->amount / 100, 2) }} {{ strtoupper($registration->currency) }}</p>
         <p style="margin:0;overflow-wrap:anywhere;"><strong>Referencia:</strong> {{ $registration->id }}</p>
       </div>
-      <p>El horario y las indicaciones de acceso se confirmarán más adelante. Conserva este correo como referencia de tu inscripción.</p>
+      <p>El horario se confirmará más adelante. Conserva este correo como referencia de tu inscripción.</p>
       <p>¡Gracias por formar parte de la familia!</p>
       <p style="margin-top:28px;"><a href="{{ config('app.url') }}" style="display:inline-block;padding:12px 22px;border-radius:40px;background:#009ec0;color:#fff;text-decoration:none;font-weight:bold;">Visitar Iniesta Academy</a></p>
     </div>

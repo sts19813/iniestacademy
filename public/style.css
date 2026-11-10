@@ -406,7 +406,4 @@ body.dialog-open { overflow: hidden; }
 .registration-consent input { flex: none; width: 18px; height: 18px; margin: 1px 0 0; accent-color: var(--turquoise); cursor: pointer; }
 .registration-consent input:focus-visible { outline: 2px solid var(--turquoise); outline-offset: 3px; }
 
-.venue-location { width: 100%; min-height: 235px; display: flex; flex-direction: column; justify-content: center; gap: 14px; padding: clamp(24px, 4vw, 40px); border-radius: 12px; background: #19323b; color: #fff; }
-.venue-location h3 { font-size: clamp(24px, 3vw, 34px); line-height: 1.2; }
-.venue-location > p:not(.eyebrow) { font-size: 15px; line-height: 24px; }
-.venue-location .venue-location-note { color: #c1d1d5; font-size: 13px !important; }
+.venue-name { font-size: 16px; line-height: 24px; font-weight: 700; }

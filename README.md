@@ -30,7 +30,7 @@ node --check public/script.js # opcional
 
 La integración de inscripción y Stripe se activa por configuración. Mientras está desactivada, la landing no recoge registros ni cobra. Se mantienen `SEGURIDAD.md`, `PLAN_DESARROLLO.md` y `config/security-baseline.json` como documentación de las fases futuras.
 
-La clínica está programada del 20 al 24 de marzo de 2027. La sede es Centro Universitario Montejo, Mérida, Yucatán. El horario, las edades y la dirección exacta están pendientes de confirmación. Los datos de contacto y perfiles sociales aún están pendientes; el aviso de privacidad publicado es una versión básica en elaboración. El pago se procesa con Stripe. Las capturas en `qa/` corresponden a la versión estática anterior a la migración.
+La clínica está programada del 20 al 24 de marzo de 2027. La sede es Centro Universitario Montejo, Mérida, Yucatán. El horario y las edades están pendientes de confirmación. Los datos de contacto y perfiles sociales aún están pendientes; el aviso de privacidad publicado es una versión básica en elaboración. El pago se procesa con Stripe. Las capturas en `qa/` corresponden a la versión estática anterior a la migración.
 
 ## Inscripciones con Stripe (preparación)
 
@@ -40,7 +40,7 @@ Los importes se expresan en centavos mexicanos: `REGISTRATION_PRICE_CENTS=109990
 
 Los datos personales se guardan cifrados con `APP_KEY`: hay que respaldar la base y esa clave de forma segura para no perder acceso a los registros. Consultar estados con `php artisan registrations:list` y, desde una sesión administrativa protegida, los datos con `php artisan registrations:list --details`. Las reservas pendientes sin identificador de sesión requieren revisión manual en Stripe antes de liberarlas, para evitar vender dos veces una plaza. El retorno del navegador no marca un pago como completado: se usa el webhook firmado y se verifica el importe.
 
-El dominio, HTTPS y el endpoint de Stripe están configurados. Aún se requiere completar y revisar el aviso de privacidad y las condiciones aplicables. El contacto, el horario y la dirección exacta siguen pendientes de confirmación.
+El dominio, HTTPS y el endpoint de Stripe están configurados. Aún se requiere completar y revisar el aviso de privacidad y las condiciones aplicables. El contacto y el horario siguen pendientes de confirmación.
 
 
 ## Panel administrativo
