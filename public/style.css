@@ -322,3 +322,70 @@ body.dialog-open { overflow: hidden; }
 .registration-errors { border-left: 4px solid #9e1b32; padding: 12px; background: #fff0f2; }
 .registration-errors ul { margin: 8px 0 0 20px; }
 .registration-form .stomtickets-logo { width: 78px; height: auto; }
+
+/* Página de inscripción */
+.registration-layout { background: white; color: var(--ink); }
+.registration-header { background: #080808; color: white; }
+.registration-header-inner { min-height: 68px; display: flex; align-items: center; gap: 40px; }
+.registration-header .brand { margin-right: auto; }
+.registration-nav { display: flex; align-items: center; gap: 40px; font-size: 14px; font-weight: 700; }
+.registration-nav a:hover { color: #79d8e9; }
+.registration-header-cta { min-height: 48px; }
+.registration-hero { display: grid; grid-template-columns: 39% 61%; min-height: 328px; }
+.registration-hero-copy { background: var(--turquoise); display: flex; align-items: center; padding: 40px max(32px, calc((100vw - var(--content-width))/2)); padding-right: 32px; }
+.registration-hero-copy p { font-size: 12px; font-weight: 500; margin-bottom: 22px; }
+.registration-hero-copy h1 { font-size: clamp(28px, 2.75vw, 40px); font-weight: 800; line-height: 1.16; }
+.registration-hero-image { min-width: 0; }
+.registration-hero-image img { width: 100%; height: 100%; max-height: 410px; object-fit: cover; object-position: center; }
+.registration-content { padding-block: 80px; background: #fff; }
+.registration-grid { display: grid; grid-template-columns: minmax(0, 440fr) minmax(0, 760fr); gap: 80px; }
+.registration-intro h2 { font-size: clamp(46px, 4.5vw, 64px); line-height: 1; margin: 28px 0; }
+.registration-intro-description { color: #77848a; line-height: 26px; max-width: 365px; }
+.registration-steps { list-style: none; padding: 0; margin: 28px 0; display: grid; gap: 24px; font-size: 13px; font-weight: 700; }
+.registration-steps li { display: flex; gap: 18px; align-items: baseline; }
+.registration-steps span { color: var(--turquoise); font-weight: 800; }
+.registration-contact, .registration-form-note { color: #7b898e; font-size: 13px; line-height: 20px; }
+.registration-main > h2 { font-size: 25px; line-height: 32px; }
+.registration-form-note { margin-top: 24px; }
+.registration-price { color: #59666c; font-size: 13px; line-height: 21px; margin-top: 14px; }
+.registration-details-form { display: grid; gap: 24px; margin-top: 26px; }
+.registration-details-form fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.registration-details-form legend { padding: 0; margin-bottom: 22px; font-size: 11px; font-weight: 800; letter-spacing: 1.4px; }
+.registration-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 24px; }
+.registration-fields label { display: flex; flex-direction: column; gap: 7px; min-width: 0; font-size: 13px; line-height: 18px; font-weight: 700; }
+.registration-fields input, .registration-fields select { width: 100%; min-width: 0; height: 43px; padding: 10px 14px; border: 1px solid #d4dbdd; border-radius: 0; background: white; color: #27353b; font: 400 14px Raleway, Arial, sans-serif; }
+.registration-fields input::placeholder { color: #879398; opacity: 1; }
+.registration-fields input:focus-visible, .registration-fields select:focus-visible { outline: 2px solid var(--turquoise); outline-offset: 2px; }
+.field-optional { font-weight: 400; }
+.registration-privacy { color: #77848a; font-size: 13px; line-height: 20px; }
+.registration-submit { position: relative; width: 100%; color: white; }
+.registration-submit img { position: absolute; right: 16px; }
+.registration-main .registration-errors { margin-top: 20px; }
+.registration-layout .site-footer { padding-block: 80px 54px; }
+.registration-layout .footer-grid > div:not(.footer-brand) h3 { font-size: 12px; line-height: 18px; margin-bottom: 18px; }
+.registration-layout .footer-grid > div:not(.footer-brand) p { color: #bfc8ca; font-size: 13px; line-height: 26px; }
+@media (max-width: 900px) {
+  .registration-header-inner { gap: 24px; }
+  .registration-nav { gap: 20px; font-size: 12px; }
+  .registration-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 48px; }
+}
+@media (max-width: 767px) {
+  .registration-header-inner { min-height: 68px; }
+  .registration-header .brand img { width: 140px; height: auto; }
+  .registration-nav { display: none; }
+  .registration-header-cta { min-height: 42px; padding: 8px 14px; font-size: 12px; }
+  .registration-hero { grid-template-columns: 1fr; }
+  .registration-hero-copy { padding: 48px var(--gutter); }
+  .registration-hero-copy h1 { font-size: 34px; }
+  .registration-hero-image { height: 240px; }
+  .registration-content { padding-block: 56px; }
+  .registration-grid { grid-template-columns: 1fr; gap: 48px; }
+  .registration-intro h2 { margin: 20px 0; }
+  .registration-steps { gap: 14px; }
+  .registration-layout .site-footer { padding-block: 56px 36px; }
+}
+@media (max-width: 480px) {
+  .registration-fields { grid-template-columns: 1fr; gap: 18px; }
+  .registration-hero-copy h1 { font-size: 30px; }
+  .registration-hero-image { height: 190px; }
+}

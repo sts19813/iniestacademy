@@ -16,12 +16,12 @@ class ListRegistrations extends Command
         $details = $this->option('details');
         $headers = ['Referencia', 'Estado', 'Monto MXN', 'Fecha'];
         if ($details) {
-            $headers = array_merge($headers, ['Comprador', 'Correo', 'Teléfono', 'Participante', 'Nacimiento']);
+            $headers = array_merge($headers, ['Comprador', 'Correo', 'Teléfono', 'Participante', 'Nacimiento', 'Datos adicionales']);
         }
         $rows = Registration::orderBy('created_at')->get()->map(function (Registration $r) use ($details) {
             $row = [$r->id, $r->status, number_format($r->amount / 100, 2), $r->created_at];
 
-            return $details ? array_merge($row, [$r->buyer_name, $r->buyer_email, $r->buyer_phone, $r->participant_name, $r->participant_birth_date]) : $row;
+            return $details ? array_merge($row, [$r->buyer_name, $r->buyer_email, $r->buyer_phone, $r->participant_name, $r->participant_birth_date, json_encode($r->participant_details, JSON_UNESCAPED_UNICODE)]) : $row;
         });
         $this->table($headers, $rows->all());
 
