@@ -50,7 +50,6 @@ h3 { font-size: 24px; line-height: 30px; font-weight: 700; }
 .button-black:hover { background: #26383f; }
 .full-width { width: 100%; }
 .registration-button { gap: 14px; }
-.registration-button .stomtickets-logo { width: 150px; max-width: 48%; height: auto; }
 .text-button { background: none; padding: 0; font-size: 14px; line-height: 24px; font-weight: 500; }
 .text-button:hover { text-decoration: underline; }
 .skip-link { position: fixed; top: 12px; left: 12px; transform: translateY(-200%); background: white; padding: 14px; z-index: 100; }
