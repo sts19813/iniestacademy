@@ -10,7 +10,7 @@
     <link rel="preload" href="{{ asset('assets/raleway-800.ttf') }}" as="font" type="font/ttf" crossorigin />
     <link rel="preload" href="{{ asset('assets/img02HeroElJuegoEmpiezaContigo.png') }}" as="image" />
     <link rel="stylesheet" href="{{ asset('assets/fonts.css') }}" />
-    <link rel="stylesheet" href="{{ asset('style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('style.css') }}?v={{ substr(md5_file(public_path('style.css')), 0, 12) }}" />
     <title>Iniesta Academy Mérida · El juego empieza contigo</title>
   </head>
   <body>

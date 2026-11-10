@@ -7,7 +7,7 @@
   <title>Inscripción · Iniesta Academy Mérida</title>
   <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}" />
   <link rel="stylesheet" href="{{ asset('assets/fonts.css') }}" />
-  <link rel="stylesheet" href="{{ asset('style.css') }}" />
+  <link rel="stylesheet" href="{{ asset('style.css') }}?v={{ substr(md5_file(public_path('style.css')), 0, 12) }}" />
 </head>
 <body class="registration-page">
   <main class="registration-panel">
