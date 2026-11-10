@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
+use Illuminate\Validation\ValidationException;
 use Stripe\StripeClient;
 use Throwable;
 
@@ -37,8 +38,12 @@ class RegistrationController extends Controller
             'socks_size' => ['required', 'in:CH,M,G,EG'],
             'shirt_name' => ['nullable', 'string', 'max:40'],
             'privacy_consent' => ['accepted'],
+            'price_quote' => ['required', 'integer', 'min:1'],
         ], ['privacy_consent.accepted' => 'Debes aceptar el aviso de privacidad para continuar.']);
         $amount = config('registration.promotion_amount') ?: config('registration.regular_amount');
+        if ((int) $data['price_quote'] !== $amount) {
+            throw ValidationException::withMessages(['price_quote' => 'El precio cambió. Revisa el importe actualizado antes de continuar.']);
+        }
         $capacity = config('registration.capacity');
         abort_unless($amount >= 1000 && $capacity > 0 && (! $this->promotionInvalid()), 503);
         $stripe = new StripeClient(config('registration.stripe_secret'));
@@ -56,7 +61,7 @@ class RegistrationController extends Controller
         // SQLite serializes this conditional INSERT, so simultaneous requests cannot exceed capacity.
         $id = (string) Str::uuid();
         $now = now();
-        $inserted = DB::affectingStatement("INSERT INTO registrations (id, buyer_name, buyer_email, buyer_phone, participant_name, participant_birth_date, participant_details, privacy_accepted_at, privacy_notice_hash, status, amount, currency, created_at, updated_at) SELECT ?, ?, ?, ?, ?, ?, ?, ?, ?, 'pending', ?, ?, ?, ? WHERE (SELECT COUNT(*) FROM registrations WHERE status IN ('pending', 'paid')) < ?", [
+        $inserted = DB::affectingStatement("INSERT INTO registrations (id, buyer_name, buyer_email, buyer_phone, participant_name, participant_birth_date, participant_details, privacy_accepted_at, privacy_notice_hash, status, amount, currency, created_at, updated_at) SELECT ?, ?, ?, ?, ?, ?, ?, ?, ?, 'pending', ?, ?, ?, ? WHERE (SELECT COUNT(*) FROM registrations WHERE status IN ('pending', 'paid')) < COALESCE((SELECT CAST(value AS INTEGER) FROM site_settings WHERE key = 'capacity'), ?)", [
             $id, Crypt::encryptString($data['buyer_name']), Crypt::encryptString($data['buyer_email']), Crypt::encryptString($data['buyer_phone']), Crypt::encryptString($data['participant_name']), Crypt::encryptString($data['participant_birth_date']), Crypt::encryptString(json_encode(collect($data)->only(['buyer_city', 'participant_position', 'football_years', 'birthplace', 'uniform_size', 'socks_size', 'shirt_name'])->all(), JSON_THROW_ON_ERROR)), $now, hash_file('sha256', resource_path('views/privacy.blade.php')), $amount, config('registration.currency'), $now, $now, $capacity,
         ]);
         if (! $inserted) {

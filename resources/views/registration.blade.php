@@ -39,6 +39,7 @@
           @if ($errors->any())<div class="registration-errors" role="alert"><strong>Revisa los siguientes datos:</strong><ul>@foreach ($errors->all() as $error)<li>{{ $error }}</li>@endforeach</ul></div>@endif
           <form method="post" action="{{ route('registration.store') }}" class="registration-details-form">
             @csrf
+            <input type="hidden" name="price_quote" value="{{ config('registration.promotion_amount') ?: config('registration.regular_amount') }}" />
             <fieldset><legend>DATOS DEL PADRE, MADRE O TUTOR</legend><div class="registration-fields">
               <label>Nombre y apellidos del tutor *<input name="buyer_name" value="{{ old('buyer_name') }}" placeholder="Ej. Ana García López" maxlength="120" autocomplete="name" required /></label>
               <label>Teléfono de contacto *<input type="tel" name="buyer_phone" value="{{ old('buyer_phone') }}" placeholder="Ej. +52 999 000 0000" maxlength="30" autocomplete="tel" required /></label>

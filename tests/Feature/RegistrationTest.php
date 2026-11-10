@@ -27,7 +27,11 @@ class RegistrationTest extends TestCase
             }
         };
         ApiRequestor::setHttpClient($client);
-        $data = ['buyer_name' => 'Comprador Test', 'buyer_email' => 'test@example.com', 'buyer_phone' => '9991234567', 'participant_name' => 'Jugador Test', 'participant_birth_date' => '2015-01-01', 'buyer_city' => 'Mérida', 'participant_position' => 'Defensa', 'football_years' => 3, 'birthplace' => 'Mérida', 'uniform_size' => 'M', 'socks_size' => 'M', 'shirt_name' => 'Jugador', 'privacy_consent' => '1', 'amount' => 1];
+        $data = ['buyer_name' => 'Comprador Test', 'buyer_email' => 'test@example.com', 'buyer_phone' => '9991234567', 'participant_name' => 'Jugador Test', 'participant_birth_date' => '2015-01-01', 'buyer_city' => 'Mérida', 'participant_position' => 'Defensa', 'football_years' => 3, 'birthplace' => 'Mérida', 'uniform_size' => 'M', 'socks_size' => 'M', 'shirt_name' => 'Jugador', 'privacy_consent' => '1', 'price_quote' => 700000, 'amount' => 1];
+        $stalePrice = $data;
+        $stalePrice['price_quote'] = 820000;
+        $this->post('/inscripcion', $stalePrice)->assertSessionHasErrors('price_quote');
+        $this->assertSame(0, Registration::count());
         $withoutConsent = $data;
         unset($withoutConsent['privacy_consent']);
         $this->post('/inscripcion', $withoutConsent)->assertSessionHasErrors('privacy_consent');

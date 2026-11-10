@@ -12,6 +12,7 @@
         "php": "^8.3",
         "laravel/framework": "^13.17",
         "laravel/tinker": "^3.0",
+        "pragmarx/google2fa": "^9.1",
         "stripe/stripe-php": "^22.1"
     },
     "require-dev": {
