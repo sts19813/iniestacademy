@@ -16,7 +16,7 @@ class Registration extends Model
         return [
             'buyer_name' => 'encrypted', 'buyer_email' => 'encrypted',
             'buyer_phone' => 'encrypted', 'participant_name' => 'encrypted',
-            'participant_birth_date' => 'encrypted', 'participant_details' => 'encrypted:array', 'paid_at' => 'datetime', 'privacy_accepted_at' => 'datetime',
+            'participant_birth_date' => 'encrypted', 'participant_details' => 'encrypted:array', 'paid_at' => 'datetime', 'privacy_accepted_at' => 'datetime', 'confirmation_email_attempted_at' => 'datetime', 'confirmation_email_sent_at' => 'datetime',
         ];
     }
 }

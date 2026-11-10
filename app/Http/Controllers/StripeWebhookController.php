@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Registration;
+use App\Services\RegistrationConfirmationSender;
 use Illuminate\Http\Request;
 use Stripe\Webhook;
 use Throwable;
@@ -41,7 +42,11 @@ class StripeWebhookController extends Controller
             }
             Registration::whereKey($id)->where('status', 'pending')->update(['status' => 'failed', 'stripe_session_id' => $session->id]);
         } else {
-            Registration::whereKey($id)->where('status', 'pending')->update(['status' => 'paid', 'paid_at' => now(), 'stripe_session_id' => $session->id]);
+            Registration::whereKey($id)->where('status', 'pending')->update(['status' => 'paid', 'paid_at' => now(), 'stripe_session_id' => $session->id, 'confirmation_email_status' => 'pending']);
+            $registration->refresh();
+            if (! app(RegistrationConfirmationSender::class)->send($registration)) {
+                return response('Confirmation email pending', 503);
+            }
         }
 
         return response('OK', 200);

@@ -52,3 +52,10 @@ Si se pierde el acceso, `php artisan admin:reset admin` sustituye contraseña y 
 El panel muestra los registros y sus detalles, y permite configurar precio regular, promoción, cupo, contacto público y apertura de inscripciones. Las claves de Stripe y del webhook permanecen en el entorno del servidor y no se muestran ni editan desde el panel. Los cambios de configuración y las consultas de registros se anotan en `admin_audit_events` sin almacenar contraseñas ni datos personales en el registro de auditoría.
 
 Los ajustes guardados en la base prevalecen sobre `.env`; respaldar la base SQLite y `APP_KEY` de manera segura. Un cambio de precio se verifica al enviar el formulario para que el comprador revise el importe actualizado antes de continuar. Las inscripciones existentes conservan su importe original.
+
+
+## Correos de confirmación
+
+Tras verificar el webhook de Stripe y confirmar un pago, se guarda el estado pagado y se intenta enviar un correo al comprador desde la cuenta configurada en `MAIL_FROM_ADDRESS`. Hostinger Email usa `MAIL_MAILER=smtp`, `MAIL_SCHEME=smtps`, `MAIL_HOST=smtp.hostinger.com`, `MAIL_PORT=465` y la cuenta completa en `MAIL_USERNAME`. La contraseña se configura solo en `.env`; no debe subirse a Git.
+
+El estado del correo se conserva por inscripción y se muestra en su detalle administrativo. Los reintentos del webhook vuelven a intentar un mensaje pendiente sin reenviar uno marcado como enviado. En caso necesario, desde una sesión administrativa SSH protegida puede ejecutarse `php artisan registrations:retry-confirmation REFERENCIA`. La aceptación por SMTP no garantiza la llegada a la bandeja de entrada; si se interrumpe el proceso justo después de que el servidor acepte un mensaje, puede producirse un duplicado al reintentar.
