@@ -36,8 +36,8 @@ const information = {
   inscripcion: {
     title: 'Tu próxima experiencia empieza aquí',
     paragraphs: [
-      'Consulta la inscripción para verano de 2027 en la sección de sede y precio.',
-      'El precio vigente se muestra en la sección de sede y precio y el pago se realiza mediante Stripe. Las fechas exactas, los horarios y la sede están pendientes de confirmación.',
+      'La clínica se realizará del 20 al 24 de marzo de 2027. Consulta la inscripción en la sección de sede y precio.',
+      'El precio vigente se muestra en la sección de sede y precio y el pago se realiza mediante Stripe. El horario y la sede están pendientes de confirmación.',
     ],
   },
   kit: {
@@ -46,7 +46,7 @@ const information = {
   },
   clinics: {
     title: 'Aprender el juego. Disfrutar el fútbol.',
-    paragraphs: ['5 días de entrenamiento deportivo con el staff y entrenadores de Iniesta Academy Global. Una experiencia basada en los conceptos futbolísticos de Andrés Iniesta.', 'Los grupos se organizan por edad y nivel. Las fechas y los horarios definitivos se publicarán antes de la inscripción.'],
+    paragraphs: ['5 días de entrenamiento deportivo con el staff y entrenadores de Iniesta Academy Global. Una experiencia basada en los conceptos futbolísticos de Andrés Iniesta.', 'Los grupos se organizan por edad y nivel. La clínica será del 20 al 24 de marzo de 2027. El horario está pendiente de confirmación.'],
   },
   contacto: {
     title: 'Hablemos de fútbol',
@@ -62,7 +62,7 @@ const information = {
   },
   terminos: {
     title: 'Términos y condiciones',
-    paragraphs: ['La inscripción tiene un costo de $8,200 MXN por participante para verano de 2027. Las fechas exactas, el horario y la sede están por confirmar.'],
+    paragraphs: ['La clínica se realizará del 20 al 24 de marzo de 2027. Consulta el precio vigente en la sección de sede y precio. El horario y la sede están por confirmar.'],
   },
   cookies: {
     title: 'Política de cookies',

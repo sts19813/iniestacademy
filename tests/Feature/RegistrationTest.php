@@ -38,6 +38,7 @@ class RegistrationTest extends TestCase
         $this->assertSame(0, Registration::count());
         $this->post('/inscripcion', $data)->assertRedirect('https://checkout.stripe.com/test');
         $this->assertSame(700000, $client->params['line_items'][0]['price_data']['unit_amount']);
+        $this->assertStringContainsString('20 al 24 de marzo de 2027', $client->params['line_items'][0]['price_data']['product_data']['name']);
         $this->assertSame(700000, Registration::first()->amount);
         $this->assertSame(1, Registration::count());
         $this->assertSame('Mérida', Registration::first()->participant_details['buyer_city']);

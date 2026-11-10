@@ -30,7 +30,7 @@ node --check public/script.js # opcional
 
 La integración de inscripción y Stripe se activa por configuración. Mientras está desactivada, la landing no recoge registros ni cobra. Se mantienen `SEGURIDAD.md`, `PLAN_DESARROLLO.md` y `config/security-baseline.json` como documentación de las fases futuras.
 
-El contenido comercial del diseño requiere confirmación antes de publicarse: hay diferencias entre secciones en precio, fechas, edades y dirección, y debe confirmarse el horario. Los datos de contacto son ficticios y los perfiles sociales, documentos legales y proveedor de pago siguen pendientes. Las capturas en `qa/` corresponden a la versión estática anterior a la migración.
+La clínica está programada del 20 al 24 de marzo de 2027. El horario, las edades y la sede están pendientes de confirmación. Los datos de contacto son ficticios y los perfiles sociales, documentos legales y proveedor de pago siguen pendientes. Las capturas en `qa/` corresponden a la versión estática anterior a la migración.
 
 ## Inscripciones con Stripe (preparación)
 
@@ -40,7 +40,7 @@ Los importes se expresan en centavos mexicanos: `REGISTRATION_PRICE_CENTS=109990
 
 Los datos personales se guardan cifrados con `APP_KEY`: hay que respaldar la base y esa clave de forma segura para no perder acceso a los registros. Consultar estados con `php artisan registrations:list` y, desde una sesión administrativa protegida, los datos con `php artisan registrations:list --details`. Las reservas pendientes sin identificador de sesión requieren revisión manual en Stripe antes de liberarlas, para evitar vender dos veces una plaza. El retorno del navegador no marca un pago como completado: se usa el webhook firmado y se verifica el importe.
 
-Antes de activar cobros faltan la configuración DNS y SSL del dominio, el endpoint de Stripe, pruebas con claves de prueba y una forma aprobada de informar la política de privacidad y las condiciones a los compradores. El contacto, la fecha exacta, el horario y la sede siguen pendientes de confirmación.
+Antes de activar cobros faltan la configuración DNS y SSL del dominio, el endpoint de Stripe, pruebas con claves de prueba y una forma aprobada de informar la política de privacidad y las condiciones a los compradores. El contacto, el horario y la sede siguen pendientes de confirmación.
 
 
 ## Panel administrativo
