@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex, nofollow" />
   <title>Inscripción · Iniesta Academy Mérida</title>
+  @include('partials.social-meta', [
+    'seoTitle' => 'Inscripción | Iniesta Academy Mérida',
+    'seoDescription' => 'Inscribe a tu participante en la clínica de fútbol del 20 al 24 de marzo de 2027 en Mérida, Yucatán.',
+    'seoUrl' => rtrim(config('app.url'), '/').'/inscripcion',
+  ])
   <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}" />
   <link rel="stylesheet" href="{{ asset('assets/fonts.css') }}" />
   <link rel="stylesheet" href="{{ asset('style.css') }}?v={{ substr(md5_file(public_path('style.css')), 0, 12) }}" />

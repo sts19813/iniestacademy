@@ -21,6 +21,11 @@ return Application::configure(basePath: dirname(__DIR__))
         commands: __DIR__.'/../routes/console.php',
         then: function () {
             Route::get('/', fn () => view('landing'))->name('landing');
+            Route::get('/sitemap.xml', function () {
+                $url = htmlspecialchars(rtrim(config('app.url'), '/').'/', ENT_XML1 | ENT_QUOTES, 'UTF-8');
+
+                return response('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>'.$url.'</loc></url></urlset>', 200, ['Content-Type' => 'application/xml; charset=UTF-8']);
+            });
             Route::get('/aviso-de-privacidad', fn () => view('privacy'))->name('privacy');
             Route::post('/stripe/webhook', StripeWebhookController::class)->name('stripe.webhook');
             Route::middleware('web')->group(function () {

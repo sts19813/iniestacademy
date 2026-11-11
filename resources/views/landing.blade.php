@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Descubre Iniesta Academy Mérida: la metodología de Andrés Iniesta, formación, valores y una experiencia de fútbol para niños y niñas." />
+    @include('partials.social-meta', [
+      'seoTitle' => 'Iniesta Academy Mérida | Clínica de fútbol 2027',
+      'seoDescription' => 'Clínica de fútbol para niñas y niños de 5 a 18 años en Mérida. Del 20 al 24 de marzo de 2027 en el Centro Universitario Montejo.',
+      'seoUrl' => rtrim(config('app.url'), '/').'/',
+    ])
     <meta name="theme-color" content="#101e24" />
     <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}" />
-    <meta name="robots" content="noindex, nofollow" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="preload" href="{{ asset('assets/raleway-800.ttf') }}" as="font" type="font/ttf" crossorigin />
     <link rel="preload" href="{{ asset('assets/img02HeroElJuegoEmpiezaContigo.png') }}" as="image" />
     <link rel="stylesheet" href="{{ asset('assets/fonts.css') }}" />
     <link rel="stylesheet" href="{{ asset('style.css') }}?v={{ substr(md5_file(public_path('style.css')), 0, 12) }}" />
-    <title>Iniesta Academy Mérida · El juego empieza contigo</title>
+    <title>Iniesta Academy Mérida | Clínica de fútbol 2027</title>
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
